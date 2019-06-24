@@ -12,9 +12,15 @@
                 Runtime: O(2^n)
 */
 function replaceX(str) {
-  const regex = new RegExp("[0-1X]", "g");
-  console.log(regex.test(str));
-  if (!regex.test(str)) return "Invalid Argument";
+  //Validate argument
+  if (!str) {
+    return "Invalid Argument";
+  }
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== "0" && str[i] !== "1" && str[i] !== "X") {
+      return "Invalid Argument";
+    }
+  }
 
   const argArr = str.split("");
   let xCount = 0;
