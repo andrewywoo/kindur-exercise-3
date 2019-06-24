@@ -1,0 +1,14 @@
+{
+  "name": "kindur-exercise-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "replacex.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "awoo",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
