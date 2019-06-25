@@ -14,10 +14,12 @@
 function replaceX(str) {
   //Validate argument
   if (!str) {
+    console.log("Invalid Argument");
     return "Invalid Argument";
   }
   for (let i = 0; i < str.length; i++) {
     if (str[i] !== "0" && str[i] !== "1" && str[i] !== "X") {
+      console.log("Invalid Argument");
       return "Invalid Argument";
     }
   }
@@ -61,6 +63,7 @@ function replaceX(str) {
     return newNumber;
   });
 
+  console.log(result);
   return result;
 }
 

@@ -2,7 +2,7 @@
   "name": "kindur-exercise-3",
   "version": "1.0.0",
   "description": "",
-  "main": "replacex.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest"
   },
