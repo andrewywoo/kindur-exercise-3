@@ -17,3 +17,7 @@ test('Runs replacex with argument "10X10X0"', () => {
     expect.arrayContaining(["1001000", "1001010", "1011000", "1011010"])
   );
 });
+
+test('Runs replacex with large argument "1X0X1X0X1X0X0X1X010X01X01X01X01X01X0X"', () => {
+  expect(replacex("1X0X1X0X1X0X0X1X010X01X01X01X01X01X0X")).toHaveLength(32768);
+});
